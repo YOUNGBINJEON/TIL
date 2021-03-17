@@ -19,7 +19,7 @@ public Employee(int id, String name, int basesalary, int generalFee) {
 
 
 /*	
- 	Employee(int id, String name, int basesalary, int generalFee){ //생성자
+ 	Employee(int id, String name, int basesalary, int generalFee){ //생성자 직접 작성
 		this.id = id;
 		this.name = name;
 		this.basesalary = basesalary;
