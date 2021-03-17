@@ -46,31 +46,6 @@ To https://github.com/YOUNGBINJEON/first.git
 
 * origin 원격 저장소로 push
 
-### push error
-
-```bash
-$ git push origin master 
-To https://github.com/*****/****** 
-# push 실패
- ! [rejected]        master -> master (non-fast-forward) 
-error: failed to push some refs to (url)
-# 원격 저장소 커밋이 로컬저장소에 없다.
-hint: Updates were rejected because the tip of your current branch is behind 
-hint: its remote counterpart. Integrate the remote changes (e.g. 
-hint: 'git pull ...') before pushing again. 
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-```
-
-#### 해결방법
-
-```bash
-
-```
-
-* 원격저장소의 커밋과 로컬의 커밋을 병합하는 
-
-
-
 ### gitignore
 
 * `.gitignore` 은 파일에 git으로 추적하지 않을 파일을 관리한다.
@@ -78,7 +53,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   ```bash
   data.csv # 특정 파일
   secret_folder/ # 특정 파일
-  .zip # 특정 압축 파일, 확장자
+  *.zip # 특정 압축 파일, 확장자
   ```
 
 * 일반적으로 개발 소스코드와 관련 없는 개발 환경 속으로 생성되는 파일들을 필수적을 넣는다. 
@@ -106,41 +81,6 @@ $ git clone __url___
 ```
 
 
-
-## 협업
-
-> 여러 명이 하나의 프로젝트를 보고 작성하고 병합하는 명령어를 살펴보자
-
-### branch
-
-* branch 생성
-
-```bash
-$ git branch ppt
-```
-
-
-
-### checkout
-
-* branch 생성 및 이동
-
-```bash
-$ git checkout ___브랜치 이름___ # 브랜치 생성
-$ git checkout =b ___브랜치 이름___ # 생성하고 이동
-```
-
-
-
-### merge
-
-* branch 병합
-
-```bash
-$ git merch ___브랜치 이름___ # 
-```
-
-###
 
 
 
