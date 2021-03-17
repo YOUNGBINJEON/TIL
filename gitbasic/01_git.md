@@ -80,6 +80,10 @@ $ git commit -m 'Add new.txt'
 * 커밋 메시지는 코드 변경사항(이력/버전/커밋)을 충분히 잘 나타낼 수 있도록 작성한다.
 * 아래의 명령어를 통해서 지금까지 기록된 커밋을 확인할 수 있다.
 
+### commit message 작성팁
+
+* [깃 커밋 메시지 가이드라인](https://meetup.toast.com/posts/106)
+
 
 
 ## log 
