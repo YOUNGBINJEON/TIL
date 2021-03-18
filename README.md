@@ -12,6 +12,6 @@
 
 ### 배열 복습
 
-* [예제](workspaceForJava/JavaExam/배열 실습.md)를 통해 배열 선언과 배열 사용의 복습 진행 
+* [예제](https://github.com/YOUNGBINJEON/TIL/blob/3b533772e7fedc254ff1bb301163824933d759c9/workspaceForJava/JavaExam/%EB%B0%B0%EC%97%B4%20%EC%8B%A4%EC%8A%B5.md)를 통해 배열 선언과 배열 사용의 복습 진행 
 
   (2021.03.17)
