@@ -64,6 +64,19 @@ To https://github.com/YOUNGBINJEON/first.git
 
   [gitignore](https://www.toptal.com/developers/gitignore) 에서 확인
 
+  
+
+* `.gitignore` 수정된 파일 깃허브에 리스트 적용하기
+
+```bash
+git rm -r --cached . //cache에 기록된 tracking 중인 파일리스트 삭제
+git add .
+git commit -m '메시지'
+git push {remote} {branch} 
+```
+
+
+
 
 
 ### pull
