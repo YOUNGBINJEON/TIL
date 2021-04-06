@@ -73,4 +73,53 @@ function upgradeUser(user) {
   } 
 }
 
-// 
+// 1. 함수 표현 Function expression
+const print = function () { //익명의 함수
+  console.log('print');
+};
+print();
+const printAgain = print;
+printAgain();
+const sumAgain = sum;
+console.log(sumAgain(1, 3)); 
+
+// 2. callback funcrion using finction expression
+function randomQuiz(answer, printYes, printNo) {
+  if (answer === 'love you') {
+    printYes();
+  }else{
+    printNo();
+  }
+}
+const printYes = function() {
+  console.log('yes');
+};
+
+const printNo = function print() { // 네임드 함수 
+  console.log('no');
+};
+randomQuiz('wrong', printYes, printNo);
+randomQuiz('love you', printYes, printNo);
+
+//Arrow Function
+const simplePrint = function () { 
+  console.log('simplePrint!');
+
+};
+const simplePrint = () => console.log('simplePrint!');
+const add = (a, b) => a + b;
+const simpleMultiply = (a, b) => {
+  //do something more
+  return a* b;
+};
+
+//IIFE : Immediately Invoked Function Expression
+(function hello() {
+  console.log('IIFE');
+})();
+
+
+// function calculate()
+const calc = function () {
+  
+} 
