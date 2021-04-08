@@ -120,6 +120,19 @@ const simpleMultiply = (a, b) => {
 
 
 // function calculate()
-const calc = function () {
+const calc = function calculate(command, a, b) {
+  switch(command) {
+    case 'add' :
+      return 'a+b';
+    case 'substract':
+      return 'a-b';
+    case 'multiply':
+      return a*b;
+    case 'remainder':
+      return a%b;
+    default:
+      throw Error('unknown command');
+  }
   
 } 
+calc('add', 2, 3);
