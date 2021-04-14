@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="vo0" class="emp.spring.EmpVO">
+	<property name="id" value="100" />
+	<property name="name" value="이사원" />
+	<property name="salary" value="222223" />
+</bean>
+
+<bean id="vo" class="emp.spring.EmpVO">
+	<constructor-arg value="300"></constructor-arg>
+	<constructor-arg value= "박대리"></constructor-arg>
+	<constructor-arg value="223123"></constructor-arg>
+</bean>
+
+<bean id="vo2" class="emp.spring.MemberVO">
+	<property name="id" value="200" />
+	<property name="name" value="김회원" />
+	<property name="email" value="e@gmail.com" />
+</bean>
+<bean id="dao" class="emp.spring.EmpDAO"></bean>
+</beans>
