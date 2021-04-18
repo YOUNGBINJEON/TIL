@@ -14,6 +14,20 @@ public class Main {
 		
 		System.out.println(numbers.remove(1));
 		System.out.println(numbers);
+		
+		ArrayList.ListIterator li = numbers.listIterator();
+		
+		System.out.println(li.hasNext());
+		
+		while(li.hasNext()) {
+			int number =(int)li.next();
+			if(number == 30) {
+				li.add(35);
+			}
+			System.out.println(number);
+		}
+		System.out.println(numbers);
+		
 	}
 
 }
