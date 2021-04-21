@@ -40,4 +40,47 @@ public class LinkedList {
 			size++;
 		}
 	}
+	
+	// 
+	Node node(int index) {
+		Node x = head;
+		for(int i =0; i< index; i++) {
+			x = x.next;
+		}
+		return x;
+		
+	}
+	
+	public void add(int k, Object input) {
+		if(k == 0) {
+			addFirst(input);
+		}
+		else {
+			Node temp1 = node(k-1);
+			Node temp2 = temp1.next;
+			Node newNode = new Node(input);
+			temp1.next = newNode;
+			newNode.next = temp2;
+			size++;
+			if(newNode.next == null) {
+				tail = newNode;
+			}
+		}
+	}
+	
+	public String toString() {
+		if(head == null ) {
+			return "[]";
+			
+		}
+		Node temp = head;
+		String str = "[";
+		
+		while(temp.next != null) {
+			str += temp.data + ", ";
+			temp = temp.next;
+		}
+		str += temp.data;
+		return str + "]";
+	}
 }

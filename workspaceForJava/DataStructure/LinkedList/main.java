@@ -9,9 +9,12 @@ public class main {
 		numbers.addFirst(10);
 		numbers.addLast(40);
 		numbers.addLast(50);
+		numbers.add(2, 25);
+		
+		System.out.println(numbers);
 		
 		
-
+		
 	}
 
 }
