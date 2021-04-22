@@ -11,6 +11,9 @@ public class main {
 		numbers.addLast(50);
 		numbers.add(2, 25);
 		
+		System.out.println(numbers.removeFirst());
+		System.out.println(numbers.remove(2));
+		System.out.println(numbers.removeLast());
 		System.out.println(numbers);
 		
 		
