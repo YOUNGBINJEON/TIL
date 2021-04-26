@@ -113,5 +113,29 @@ public class LinkedList {
 		return remove(size-1);
 		
 	}
+	public int size(){
+        return size;
+    }
+    public Object get(int k){
+        Node temp = node(k);
+        return temp.data;
+    }
+    public int indexOf(Object data){
+        // 탐색 대상이 되는 노드를 temp로 지정합니다.
+        Node temp = head;
+        // 탐색 대상이 몇번째 엘리먼트에 있는지를 의미하는 변수로 index를 사용합니다.
+        int index = 0;
+        // 탐색 값과 탐색 대상의 값을 비교합니다. 
+        while(temp.data != data){
+            temp = temp.next;
+            index++;
+            // temp의 값이 null이라는 것은 더 이상 탐색 대상이 없다는 것을 의미합니다.이 때 -1을 리턴합니다.
+            if(temp == null)
+                return -1;
+        }
+        // 탐색 대상을 찾았다면 대상의 인덱스 값을 리턴합니다.
+        return index;
+    }
+	
 	
 }
