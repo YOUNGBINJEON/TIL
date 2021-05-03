@@ -1,5 +1,7 @@
 package list.linkedlist.implementation;
- 
+
+import java.util.ListIterator;
+
 public class LinkedList {
 	private Node head;
 	private Node tail;
@@ -136,6 +138,59 @@ public class LinkedList {
         // 탐색 대상을 찾았다면 대상의 인덱스 값을 리턴합니다.
         return index;
     }
+    
+    public ListIterator listIterator() {
+    	return new ListIterator();
+    }
+    
+    class ListIterator{
+    	private Node next;
+    	private Node lastReturned;
+    	private int nextIndex;
+    	ListIterator(){
+    		next = head;
+    	}
+    	
+    	public Object next() {
+    		lastReturned = next;
+    		next = next.next;
+    		nextIndex++;
+    		return lastReturned.data;
+    	}
+    	
+    	public boolean hasNext( ) {
+    		return nextIndex < size();
+    	}
+    	
+    	public void add(Object input) {
+    		Node newNode = new Node(input);
+    		
+    		
+    		if(lastReturned == null) {   			
+    			head = newNode;
+    			newNode.next = next;
+    		} else {
+    			lastReturned.next = newNode;
+    			newNode.next = next;
+    			
+    		}
+    		  		
+    		lastReturned = newNode;
+    		nextIndex++;
+    		size++;
+    		
+    	}
+    	
+    	public void remove() {
+    		if(nextIndex == 0) {
+    			throw new IllegalStateException();
+    		}
+    		LinkedList.this.remove(nextIndex-1);
+    		nextIndex--;
+    	}
+    	
+    }
+    
 	
 	
 }
