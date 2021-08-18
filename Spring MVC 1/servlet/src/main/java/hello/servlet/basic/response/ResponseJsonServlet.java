@@ -19,7 +19,7 @@ public class ResponseJsonServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Contest-Type: application/json
         response.setContentType("application/json");
-        response.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8"); //
 
         HelloData helloData = new HelloData();
         helloData.setUsername("kim");
@@ -27,6 +27,7 @@ public class ResponseJsonServlet extends HttpServlet {
 
         //{"username":"kim", "age": 20}
         String result = objectMapper.writeValueAsString(helloData);
+        // 스펙상 utf-8 형식으로 정의된 'application/json' 에 의미없는 charset=utf-8을 추가하지 않기 위해 response.getOutputStream() 으로 출력하면 문제 해결
         response.getWriter().write(result);
     }
 }
