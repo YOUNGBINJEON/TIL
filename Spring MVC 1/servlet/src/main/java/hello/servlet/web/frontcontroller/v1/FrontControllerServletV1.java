@@ -28,7 +28,17 @@ public class FrontControllerServletV1 implements ControllerV1 {
 
     @Override
     public void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 실행되는지 확인테스트
+        // 실행되는지 확인테스트 실제 확인시, log로 확인하자
         System.out.println("FrontControllerServletV1.service");
+
+        String requestURI = request.getRequestURI();
+
+        ControllerV1 controller = controllerMap.get(requestURI);
+        if(controller == null) {
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+            return;
+        }
+        controller.process(request, response);
+
     }
 }
