@@ -36,5 +36,5 @@
 
 ## V3 구조
 
-![스크린샷 2021-09-04 오후 11.44.25](/Users/MisternB/Desktop/TIL/md-images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-09-04%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2011.44.25.png)
+![스크린샷 2021-09-04 오후 11.44.25](https://github.com/YOUNGBINJEON/TIL/blob/fc706dfa934bfe3dde582d2fbd42b17da5864f6b/md-images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202021-09-04%20%EC%98%A4%ED%9B%84%2011.44.25.png)
 
