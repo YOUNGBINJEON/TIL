@@ -35,7 +35,7 @@ public class SpringMemberControllerV2 {
         mv.addObject("member", member);
         return mv;
     }
-    
+
     // ("/springmvc/v2/members")이 그대로 내려오기에 따로 작성할 필요없음
     @RequestMapping
     public ModelAndView members() {
