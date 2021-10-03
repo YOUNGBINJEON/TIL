@@ -18,7 +18,7 @@ public class ResponseViewController {
 
     @RequestMapping("/response-view-v2")
     public String responseViewV2(Model model) {
-        model.addAttribute("data", "hello!";
+        model.addAttribute("data", "hello!");
 
         return "response/hello";
     }
@@ -26,6 +26,6 @@ public class ResponseViewController {
     //view-V3
     @RequestMapping("/response/hello")
     public void responseViewV3(Model model) {
-        model.addAttribute("data", "hello!";
+        model.addAttribute("data", "hello!");
     }
 }
