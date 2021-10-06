@@ -16,7 +16,7 @@ import java.io.IOException;
 @Slf4j
 //@ResponseBody
 //@Controller
-@RestController
+@RestController //ResponseBody, Controller 기능 내포
 public class ResponseBodyController {
 
     @GetMapping("/response-body-string-v1")
