@@ -1,8 +1,8 @@
-let num = 5;
+const num = 5;
 
 for (let i=1; i<=num; i++) {  
   let space = '';
-  
+
   // 공백 증가 
   for (let k=1; k<=num-i; k++) {
     space += ' ';
