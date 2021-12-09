@@ -20,7 +20,7 @@ const c = one(4);
 
 console.log(a(10));
 console.log(b(10));
-console.log(b(10));
+console.log(c(10));
 ```
 
 
@@ -45,16 +45,10 @@ console.log(b(10));
 
 ## 해답
 
-* `prompt()` 함수를 통해 입력받은 값 `unsorted` 변수에 저장
+* `Math.pow(base, exponent)` : `base` 에  `exponent` 를 제곱한 값을 반환한다.
 
-* 정렬될 값을 저장할 `sorted` 변수 설정
-
-* `sort()` : 배열의 요소를 적절한 위치에 정렬한 후 그 배열을 반환
-
-  * `split(" ")` : 공백을 기준으로 요소를 나눈다
-  * `function(a, b) {b-a}` : `unsorted` 요소를 2개씩 비교하여 `sort()` 메소드로 정렬
-
-* `if()` 조건문으로 입력 받은 `unsorted` 요소와  정렬된 `sorted` 값을 비교하여 일치여부 출력
+  * `base` : 밑 값
+  * `exponent` : 밑을 제곱하기 위해 사용하는 지수
 
   
 
@@ -66,8 +60,9 @@ console.log(b(10));
 
 ```js
 function one(n) {
-  function two(){
-    //pass
+  function two(m){
+    
+    return Math.pow(m, n);
   }
   return two;
 }
@@ -78,7 +73,7 @@ const c = one(4);
 
 console.log(a(10));
 console.log(b(10));
-console.log(b(10));
+console.log(c(10));
 
 ```
 
@@ -90,3 +85,4 @@ console.log(b(10));
 
 **출력 창** 
 
+![스크린샷 2021-12-09 오후 9.08.09](../../md-images/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-12-09%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209.08.09.png)
