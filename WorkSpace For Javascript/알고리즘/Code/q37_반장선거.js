@@ -9,7 +9,7 @@ for(let index in array) {
 
 winner = Object.keys(result).reduce(function(a, b){
   console.log(a, b);
-  eturn result[a] > result[b] ? a : b
+  return result[a] > result[b] ? a : b
 
 });
 
