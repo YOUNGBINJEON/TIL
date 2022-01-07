@@ -77,8 +77,7 @@ public interface Validator {
 private final ItemValidator itemValidator;
 
 @PostMapping("/add")
-public String addItemV5(@ModelAttribute Item item, BindingResult bindingResult,
-RedirectAttributes redirectAttributes) {
+public String addItemV5(@ModelAttribute Item item, BindingResult bindingResult,RedirectAttributes redirectAttributes) {
  itemValidator.validate(item, bindingResult);
  
  if (bindingResult.hasErrors()) {
