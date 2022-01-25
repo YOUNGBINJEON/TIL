@@ -163,3 +163,5 @@ POST http://localhost:8080/validation/api/items/add
 ]
 ```
 
+`return bindingResult.getAllErrors();` 는 `ObjectError` 와 `FieldError` 를 반환한다. 스프링이 이 객체를 JSON으로 변환해서 클라이언트에 전달했다. 여기서는 예시로 보여주기 위해서 검증 오류 객체들을 그대로 반환했다. 실제 개발할 때는 이 객체들을 그대로 사용하지 말고, 필요한 데이터만 뽑아서 별도의 API  스펙을 정의하고 그에 맞는 객체를 만들어서 반환해야 한다.
+
