@@ -19,6 +19,13 @@ public class WebConfig implements WebMvcConfigurer {
                 .order(1)
                 .addPathPatterns("/**")
                 .excludePathPatterns("/css/**", "/*.ico", "/error");
+
+        registry.addInterceptor(new LoginInterceptor())
+                .order(2)
+                .addPathPatterns("/**")
+                .excludePathPatterns("/", "/members/add", "/login", "/logout",
+                        "/css/**", "/*.ico", "/error");
+
     }
 
     @Bean
@@ -32,7 +39,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     }
 
-    @Bean
+    //@Bean
     public FilterRegistrationBean logCheckFilter() {
         FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<>();
         filterRegistrationBean.setFilter(new LogFilter());
