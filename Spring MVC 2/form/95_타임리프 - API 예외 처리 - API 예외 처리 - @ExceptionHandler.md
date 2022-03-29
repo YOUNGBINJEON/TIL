@@ -1,6 +1,6 @@
-# 95_타임리프 - API 예외 처리 - API 예외 처리 - @ExceotionHandler
+# 95_타임리프 - API 예외 처리 - API 예외 처리 - @ExceptionHandler
 
-## API 예외 처리 - @ExceotionHandler
+## API 예외 처리 - @ExceptionHandler
 
 **HTML 화면 오류 vs API 오류**
 
