@@ -248,7 +248,7 @@ public ErrorResult exHandle(Exception e) {
 ```
 
 * `throw new RuntimeException("잘못된 사용자")` 이 코드가 실행되면서, 컨트롤러 밖으로 `RuntimeException` 이 던져진다. 
-* `RuntimeException` 은 Ex`ception` 의 자식 클래스이다. 따라서 이 메서드가 호출된다. 
+* `RuntimeException` 은 `Exception` 의 자식 클래스이다. 따라서 이 메서드가 호출된다. 
 * `@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)` 로 HTTP 상태 코드를 500으로 응답한다.
 
 
