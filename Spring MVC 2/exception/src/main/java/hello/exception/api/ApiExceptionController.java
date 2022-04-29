@@ -38,7 +38,7 @@ public class ApiExceptionController {
 
     @GetMapping("/api/response-status-ex2")
     public String responseStatusEx2() {
-        throw new ResponseStatusException(HttpStatus.NOT_FOUND, "error.bad", new IllegalArgumentException())
+        throw new ResponseStatusException(HttpStatus.NOT_FOUND, "error.bad", new IllegalArgumentException());
     }
 
     @Data
